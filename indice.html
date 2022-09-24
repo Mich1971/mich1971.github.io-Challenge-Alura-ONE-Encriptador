@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+<html lang="es" dir="ltr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <title>Primer Challenge Alura ONE</title>
+        <link rel="shortcut icon" href="./vectorlogo.png">
+        <link rel="stylesheet" href="./reset.css">
+        <link rel="stylesheet" href="./estilo.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap" rel="stylesheet">
+    </head>
+
+    <body>
+        <div class="contenedor">
+            <header>
+                <img class="logoima" src="./vectorlogo.png" alt="Logo Alura">
+                <h1 class="tituloInicial" onclick="inicio()">ENCRIPTADOR</h1>
+            </header>
+            <div class="left">
+                <textarea id="ingresoTexto" class="texto" type="text" cols="40" rows="6" placeholder="Ingrese el texto del mensaje aquí.">
+                </textarea>
+            </div>
+            <div class="left-button">
+                <p>↑↑ Solo letras minúsculas y sin acentos. ↑↑</p>
+                <button id="bot-encriptar" class="boton" type="button" onclick="encriptar()">Encriptar</button>
+                <button id="bot-desencriptar" class="boton" type="button" onclick="desencriptar()">Desencriptar</button> 
+            </div>
+            <section class="right">
+                <div id="div-ocultar">
+                    <img id="imaDer" src="./mugneco.png" alt="Muñeco">
+                    <h2>Ningún mensaje fue encontrado</h2>
+                </div>
+                <h2 id="titulo1" class="subTitulo">Mensaje Encriptado</h2>
+                <h2 id="titulo2" class="subTitulo">Mensaje Desencriptado</h2>
+                <textarea id="mensaje" class="texto" rows="12" cols="18">Ingresa el texto que desees encriptar o desencriptar.</textarea>
+                <button id="bot-copiar" class="boton" type="button" onclick="copiar()">Copiar</button>
+            </section>
+            <footer>
+                <p class="copyright">Version 1.0.0 &copy; Copyright MC Desings - 2022</p>
+            </footer>
+        </div>
+        <script type="text/javascript" src="./script.js"></script>
+    </body>
+</html>
